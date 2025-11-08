@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Card</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.2.1/dist/font-face.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f7f8fa;
+      }
+
+      .wrapper {
+        width: 329px;
+        height: 475px;
+        border: 1px solid #ececec;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*background-image: url(static/images/money.jpg);*/
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mainWrapper {
+        width: 75%;
+        height: 349.73px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      .iconBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .icon {
+        width: 83.38px;
+        height: 83.38px;
+      }
+
+      .iconText {
+        font-size: 14pt;
+          font-family:"IRANYekanRDMobile",sans-serif;
+        color: #e24c4b;
+      }
+
+      .textWrapper {
+        padding-bottom: 70px;
+      }
+
+      .card-button {
+        background-color: #202881;
+        outline: none;
+        border: 1px solid #707070;
+        width: 127px;
+        height: 36px;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 13px;
+          font-family:"IRANYekanRDMobile",sans-serif;
+        cursor: pointer;
+      }
+
+      .text {
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+          font-family:"IRANYekanRDMobile",sans-serif;
+      }
+
+      .pt-6 {
+        padding-top: 6px;
+      }
+
+      .title {
+        font-size: 15px;
+      }
+
+      .sub {
+        font-size: 13.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mainWrapper">
+        <div class="iconBox">
+<!--          <img src="static/images/close-circle-icon.svg" alt="error image" />-->
+          <span class="iconText">خرید ناموفق</span>
+        </div>
+        <div class="textWrapper">
+          <div class="text title">پرداخت شما با موفقیت انجام نشد</div>
+          <div class="text sub pt-6">
+            چنانچه از حساب شما مبلغی کسر شده است طی ۴۸ ساعت آینده به حساب شما باز
+            گردانده خواهد شد
+          </div>
+        </div>
+<!--        <a href="https://gandimobile.ir/">-->
+          <button class="card-button" onclick="window.location.href='https://gandimobile.ir/'">بازگشت به سایت</button>
+<!--        </a>-->
+      </div>
+    </div>
+  </body>
+</html>

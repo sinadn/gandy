@@ -1,0 +1,15 @@
+package com.example.gandy.entity;
+
+public enum EShipmentStatus {
+    SHIPMENT_ACCEPT,
+    SHIPMENT_FACTOR,
+    SHIPMENT_PACKING,
+    SHIPMENT_SEND_TO_POST,
+    SHIPMENT_SEND,
+    SHIPMENT_RECIEVE,
+    SHIPMENT_CANCEL,
+    SHIPMENT_RETURN,
+    SHIPMENT_ROLLBACK,
+    SHIPMENT_CART
+
+}
